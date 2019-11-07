@@ -8,7 +8,20 @@ export default tsx.component({
       msg: "HelloWorld"
     };
   },
+  methods: {
+    handleHoverEvent() {
+      if (this.msg === "HelloWorld") this.msg = "HelloVueTSX";
+      else this.msg = "HelloWorld";
+    }
+  },
   render(h: CreateElement): VNode {
-    return <div>{this.msg}</div>;
+    return (
+      <div
+        onmouseenter={this.handleHoverEvent}
+        onmouseleave={this.handleHoverEvent}
+      >
+        {this.msg}
+      </div>
+    );
   }
 });
