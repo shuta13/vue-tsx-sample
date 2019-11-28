@@ -1,6 +1,8 @@
 import * as tsx from "vue-tsx-support";
 import { VNode, CreateElement } from "vue";
 
+import "./HelloWorld.scss"
+
 export default tsx.component({
   name: "HelloWorld",
   data() {
@@ -8,18 +10,9 @@ export default tsx.component({
       msg: "HelloWorld"
     };
   },
-  methods: {
-    handleHoverEvent() {
-      if (this.msg === "HelloWorld") this.msg = "HelloVueTSX";
-      else this.msg = "HelloWorld";
-    }
-  },
   render(h: CreateElement): VNode {
     return (
-      <div
-        onmouseenter={this.handleHoverEvent}
-        onmouseleave={this.handleHoverEvent}
-      >
+      <div class="msg">
         {this.msg}
       </div>
     );
