@@ -33,7 +33,6 @@ export default tsx.component({
   render(h: CreateElement): VNode {
     return (
       <div>
-        {/* <div class={className}> */}
         <div style={styles.msg}>{this.msg}</div>
       </div>
     );
