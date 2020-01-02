@@ -1,39 +1,28 @@
 import * as tsx from "vue-tsx-support";
 import { VNode, CreateElement } from "vue";
+import React from "react";
 
-import addStyleRules from "./modules/addStyleRules";
-
-const styles = {
-  msg: {
-    color: "rgb(59, 165, 119)",
-    animation: "horizontal 1.2s ease-in-out infinite alternate"
-  }
-};
+import { css } from "emotion";
 
 export default tsx.component({
   name: "CssInJs",
   data() {
     return {
       msg: "HelloWorld(CssInJs)",
-      horizontalFrame: `
-        @keyframes horizontal {
-          0% {
-            transform:translateX(-8px);
-          }
-          100% {
-            transform:translateX(8px);
-          }
-        }
-      `
+      msgRef: React.createRef()
     };
   },
-  mounted() {
-    addStyleRules(this.horizontalFrame);
-  },
   render(h: CreateElement): VNode {
+    const msg = css`
+      color: green;
+    `;
+    const node = this.msgRef.current
+    node === null
+      ? console.log('WTF')
+      : node.classList.add(msg)
     return (
       <div>
-        <div style={styles.msg}>{this.msg}</div>
+        <div ref={this.msgRef}>{this.msg}</div>
       </div>
     );
   }
