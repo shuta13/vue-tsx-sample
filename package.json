@@ -11,6 +11,7 @@
   "dependencies": {
     "core-js": "^3.3.2",
     "vue": "^2.6.10",
+    "vue-tsx-keyframes": "^1.0.3",
     "vue-tsx-support": "^2.3.2"
   },
   "devDependencies": {
@@ -27,7 +28,6 @@
     "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
     "typescript": "~3.5.3",
-    "vue-template-compiler": "^2.6.10",
-    "vue-tsx-keyframes": "^1.0.2"
+    "vue-template-compiler": "^2.6.10"
   }
 }

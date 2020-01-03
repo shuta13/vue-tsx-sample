@@ -8499,10 +8499,10 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue-tsx-keyframes@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/vue-tsx-keyframes/-/vue-tsx-keyframes-1.0.2.tgz#8b73589b05abe7518c33103d5eb8032ea07e3565"
-  integrity sha512-qvSjAqFHRy6z4apC/JgdrqEX7QMlqN9xwtTXcSsg4fpaxIf7NUlFOAm87lt1pUmU8UqF43r5tN2QQQjvK0HHDw==
+vue-tsx-keyframes@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-tsx-keyframes/-/vue-tsx-keyframes-1.0.3.tgz#1976b5082d5d0d8ec93b62a9248f216091278511"
+  integrity sha512-tkUuQrtCMVUPpP6smn5TUB2HLv4T73bCyZlYWqQ92EYuasSbigo6YN1VLPhwjLMTA3E+l0O6jbPZJNufMlXHGg==
   dependencies:
     vue "^2.6.11"
 
