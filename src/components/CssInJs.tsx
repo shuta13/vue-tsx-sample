@@ -1,7 +1,7 @@
 import * as tsx from "vue-tsx-support";
 import { VNode, CreateElement } from "vue";
 
-import addStyleRules from "./modules/addStyleRules";
+import keyframes from "vue-tsx-keyframes";
 
 const styles = {
   msg: {
@@ -28,7 +28,7 @@ export default tsx.component({
     };
   },
   mounted() {
-    addStyleRules(this.horizontalFrame);
+    keyframes(this.horizontalFrame);
   },
   render(h: CreateElement): VNode {
     return (
